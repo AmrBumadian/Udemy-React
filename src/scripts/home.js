@@ -67,12 +67,11 @@ function fillAllCoursesData(allCoursesList, data) {
 
 function displaySearchResult(categoryList) {
 	let categorySection = document.querySelector(".category");
-	let courseSection = categorySection.querySelector(".courses");
 	categorySection.querySelector("h3").innerText = "";
 	categorySection.querySelector(".category-description").innerText = "";
 	categorySection.querySelector("#explore-category").hidden = true;
-	clearCoursesSection(courseSection);
-	displayAvailableCourses(courseSection, categoryList);
+	//clearCoursesSection(courseSection);
+	displayAvailableCourses(categoryList);
 }
 
 function filterCoursesByPattern(searchQuery) {
@@ -90,14 +89,13 @@ function displayNewCourseCategory(courseCategoryObject) {
 	let categoryTitle = categorySection.querySelector("h3");
 	let description = categorySection.querySelector(".category-description");
 	let exploreButton = categorySection.querySelector("#explore-category");
-	let courseSection = categorySection.querySelector(".courses");
 	categoryTitle.innerText = courseCategoryObject?.title ?? "";
 	description.innerText = courseCategoryObject?.description ?? "";
 	exploreButton.hidden = false;
 	exploreButton.innerHTML = `Explore ${courseCategoryObject?.name ?? ""}`;
 
-	clearCoursesSection(courseSection);
-	displayAvailableCourses(courseSection, courseCategoryObject.courses);
+	//clearCoursesSection(courseSection);
+	displayAvailableCourses(courseCategoryObject.courses);
 	slickIt();
 }
 
@@ -110,12 +108,12 @@ function clearCoursesSection(courseSection) {
 	}
 }
 
-function displayAvailableCourses(courseSection, coursesDataArray) {
+function displayAvailableCourses(coursesDataArray) {
 	if (coursesDataArray.length === 0) {
-		displayNoCourses(courseSection);
+		displayNoCourses();
 		return;
 	}
-	displayCourses(courseSection, coursesDataArray);
+	displayCourses(coursesDataArray);
 }
 
 function displayNoCourses(courseSection) {
@@ -125,37 +123,17 @@ function displayNoCourses(courseSection) {
 	courseSection.appendChild(noCoursesMessage);
 }
 
-function displayCourses(courseSection, coursesDataArray) {
+function displayCourses(coursesDataArray) {
+	let courseSection = document.createElement("section");
 	for (let course of coursesDataArray) {
-		let courseImageElement = document.createElement("img");
-		courseImageElement.setAttribute("src", course["image"]);
-		courseImageElement.setAttribute("alt", course["alt-image"]);
-
-		let courseNameElement = document.createElement("h4");
-		courseNameElement.classList.add("course-name");
-		courseNameElement.innerText = course.name;
-
-		let courseAuthorElement = document.createElement("h5");
-		courseAuthorElement.classList.add("author");
-		courseAuthorElement.innerText = course.author;
-
-		let courseRatingElement = document.createElement("section");
-		courseRatingElement.classList.add("rating");
-		appendRating(courseRatingElement, course.rating, course.enrolled);
-
-		let coursePricesElement = document.createElement("section");
-		appendPrices(coursePricesElement, course.currentPrice, course.oldPrice);
-
-		let courseDataElement = document.createElement("section");
-		courseDataElement.classList.add("course");
-		courseDataElement.appendChild(courseImageElement);
-		courseDataElement.appendChild(courseNameElement);
-		courseDataElement.appendChild(courseAuthorElement);
-		courseDataElement.appendChild(courseRatingElement);
-		courseDataElement.appendChild(coursePricesElement);
-
-		courseSection.appendChild(courseDataElement);
+		const courseCard = <CourseCard imageSrc={course.imageSrc} imageAlt={course.imageAlt} courseName={course.name}
+		                               author={course.author} rating={course.rating} enrolled={course.enrolled}
+		                               price={course.price}
+		                               oldPrice={course.oldPrice}/>
+		courseSection.appendChild(courseCard);
 	}
+	const courses = ReactDOM.createRoot(document.querySelector("#courses"));
+	courses.render(courseSection);
 }
 
 function appendRating(rateSectionElement, courseRating, enrolledCount) {

@@ -1,3 +1,3 @@
-# Udemy home page
+# Udemy using React
 
-First project during bld.ai summer internship
+Second project during bld.ai summer internship

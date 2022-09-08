@@ -11,8 +11,8 @@
                 "enrolled": 20993,
                 "currentPrice": "E£269.99",
                 "oldPrice": "E£1299.99",
-                "image": "../resources/images/aws_course1.jpg",
-                "alt-image": "AWS Logo "
+                "imageSrc": "../resources/images/aws_course1.jpg",
+                "imageAlt": "AWS Logo "
             },
             {
                 "name": "AWS Certified Security Speciality 2022",
@@ -20,8 +20,8 @@
                 "rating": 4.6,
                 "enrolled": 5331,
                 "currentPrice": "E£369.99",
-                "image": "../resources/images/aws_course2.jpg",
-                "alt-image": "AWS Logo "
+                "imageSrc": "../resources/images/aws_course2.jpg",
+                "imageAlt": "AWS Logo "
             },
             {
                 "name": "Part 1: AWS Certified Solutions Architect SAA C03 [Updated]",
@@ -30,8 +30,8 @@
                 "enrolled": 1571,
                 "currentPrice": "E£269.99",
                 "oldPrice": "E£669.99",
-                "image": "../resources/images/aws_course3.jpg",
-                "alt-image": "AWS Logo "
+                "imageSrc": "../resources/images/aws_course3.jpg",
+                "imageAlt": "AWS Logo "
             },
             {
                 "name": "Practice Test AWS Solutions Architect Associate SAA C03",
@@ -40,8 +40,8 @@
                 "enrolled": 2829,
                 "currentPrice": "E£269.99",
                 "oldPrice": "E£519.99",
-                "image": "../resources/images/aws_course4.jpg",
-                "alt-image": "AWS Logo "
+                "imageSrc": "../resources/images/aws_course4.jpg",
+                "imageAlt": "AWS Logo "
             },
             {
                 "name": "AWS Certified Solution Architect - Associate",
@@ -50,8 +50,8 @@
                 "enrolled": 2285,
                 "currentPrice": "E£269.99",
                 "oldPrice": "E£829.99",
-                "image": "../resources/images/aws_course5.jpg",
-                "alt-image": "AWS Logo "
+                "imageSrc": "../resources/images/aws_course5.jpg",
+                "imageAlt": "AWS Logo "
             },
             {
                 "name": "AWS Certified Solutions Architect - Associate 2022",
@@ -59,8 +59,8 @@
                 "rating": 4.6,
                 "enrolled": 1472,
                 "currentPrice": "E£319.99",
-                "image": "../resources/images/aws_course6.jpg",
-                "alt-image": "AWS Logo "
+                "imageSrc": "../resources/images/aws_course6.jpg",
+                "imageAlt": "AWS Logo "
             }
         ]
     },
@@ -76,8 +76,8 @@
                 "enrolled": 32044,
                 "currentPrice": "E£269.99",
                 "oldPrice": "E£1299.99",
-                "image": "../resources/images/ds_course1.jpg",
-                "alt-image": "Data Science Logo "
+                "imageSrc": "../resources/images/ds_course1.jpg",
+                "imageAlt": "Data Science Logo "
             },
             {
                 "name": "Machine Learning, Data Science and Deep Learning with Python",
@@ -86,8 +86,8 @@
                 "enrolled": 27633,
                 "currentPrice": "E£229.99",
                 "oldPrice": "E£269.99",
-                "image": "../resources/images/ds_course2.jpg",
-                "alt-image": "Data Science Logo "
+                "imageSrc": "../resources/images/ds_course2.jpg",
+                "imageAlt": "Data Science Logo "
             },
             {
                 "name": "Data Science: Deep Learning and Neural Networks in Python",
@@ -96,8 +96,8 @@
                 "enrolled": 8508,
                 "currentPrice": "E£229.99",
                 "oldPrice": "E£1199.99",
-                "image": "../resources/images/ds_course4.jpg",
-                "alt-image": "Data Science Logo "
+                "imageSrc": "../resources/images/ds_course4.jpg",
+                "imageAlt": "Data Science Logo "
             },
             {
                 "name": "R programming A-Z™: R For Data Science With Real Exercises!",
@@ -106,8 +106,8 @@
                 "enrolled": 47137,
                 "currentPrice": "E£269.99",
                 "oldPrice": "E£1399.99",
-                "image": "../resources/images/ds_course3.jpg",
-                "alt-image": "Data Science Logo "
+                "imageSrc": "../resources/images/ds_course3.jpg",
+                "imageAlt": "Data Science Logo "
             },
             {
                 "name": "Data Science and Machine Learning Bootcamp with R",
@@ -116,8 +116,8 @@
                 "enrolled": 15123,
                 "currentPrice": "E£319.99",
                 "oldPrice": "E£1599.99",
-                "image": "../resources/images/ds_course5.jpg",
-                "alt-image": "Data Science Logo "
+                "imageSrc": "../resources/images/ds_course5.jpg",
+                "imageAlt": "Data Science Logo "
             },
             {
                 "name": "R Programming: Advanced Analytics In R For Data Science",
@@ -126,8 +126,8 @@
                 "enrolled": 7991,
                 "currentPrice": "E£319.99",
                 "oldPrice": "E£1599.99",
-                "image": "../resources/images/ds_course6.jpg",
-                "alt-image": "Data Science Logo "
+                "imageSrc": "../resources/images/ds_course6.jpg",
+                "imageAlt": "Data Science Logo "
             }
         ]
     },
@@ -143,8 +143,8 @@
                 "enrolled": 788,
                 "currentPrice": "E£199.99",
                 "oldPrice": "E£229.99",
-                "image": "../resources/images/js_course1.jpg",
-                "alt-image": "JavaScript Logo "
+                "imageSrc": "../resources/images/js_course1.jpg",
+                "imageAlt": "JavaScript Logo "
             },
             {
                 "name": "1 Hour JavaScript",
@@ -153,8 +153,8 @@
                 "enrolled": 1898,
                 "currentPrice": "E£269.99",
                 "oldPrice": "E£1399.99",
-                "image": "../resources/images/js_course2.jpg",
-                "alt-image": "JavaScript Logo "
+                "imageSrc": "../resources/images/js_course2.jpg",
+                "imageAlt": "JavaScript Logo "
             },
             {
                 "name": "JavaScript: Understanding the Weird Parts",
@@ -163,8 +163,8 @@
                 "enrolled": 45205,
                 "currentPrice": "E£319.99",
                 "oldPrice": "E£1299.99",
-                "image": "../resources/images/js_course3.jpg",
-                "alt-image": "JavaScript Logo "
+                "imageSrc": "../resources/images/js_course3.jpg",
+                "imageAlt": "JavaScript Logo "
             },
             {
                 "name": "Javascript for Beginners Learn by Doing Practical Exercises",
@@ -173,8 +173,8 @@
                 "enrolled": 14143,
                 "currentPrice": "E£229.99",
                 "oldPrice": "E£679.99",
-                "image": "../resources/images/js_course4.jpg",
-                "alt-image": "JavaScript Logo "
+                "imageSrc": "../resources/images/js_course4.jpg",
+                "imageAlt": "JavaScript Logo "
             },
             {
                 "name": "JavaScript from Beginner to Expert",
@@ -183,8 +183,8 @@
                 "enrolled": 1155,
                 "currentPrice": "E£269.99",
                 "oldPrice": "E£829.99",
-                "image": "../resources/images/js_course5.jpg",
-                "alt-image": "JavaScript Logo "
+                "imageSrc": "../resources/images/js_course5.jpg",
+                "imageAlt": "JavaScript Logo "
             },
             {
                 "name": "JavaScript for Kids: Code Your Own Games and Apps at Any Age",
@@ -193,8 +193,8 @@
                 "enrolled": 796,
                 "currentPrice": "E£229.99",
                 "oldPrice": "E£319.99",
-                "image": "../resources/images/js_course6.jpg",
-                "alt-image": "JavaScript Logo "
+                "imageSrc": "../resources/images/js_course6.jpg",
+                "imageAlt": "JavaScript Logo "
             }
         ]
     },
@@ -210,8 +210,8 @@
                 "enrolled": 2985,
                 "currentPrice": "E£269.99",
                 "oldPrice": "E£679.99",
-                "image": "../resources/images/py_course1.jpg",
-                "alt-image": "Python Logo "
+                "imageSrc": "../resources/images/py_course1.jpg",
+                "imageAlt": "Python Logo "
             },
             {
                 "name": "Learn Python for Data Analysis and Visualization",
@@ -220,8 +220,8 @@
                 "enrolled": 18017,
                 "currentPrice": "E£319.99",
                 "oldPrice": "E£1599.99",
-                "image": "../resources/images/py_course2.jpg",
-                "alt-image": "Python Logo "
+                "imageSrc": "../resources/images/py_course2.jpg",
+                "imageAlt": "Python Logo "
             },
             {
                 "name": "Python for Beginners - Learn Programming from scratch",
@@ -230,8 +230,8 @@
                 "enrolled": 1798,
                 "currentPrice": "E£269.99",
                 "oldPrice": "E£679.99",
-                "image": "../resources/images/py_course3.jpg",
-                "alt-image": "Python Logo "
+                "imageSrc": "../resources/images/py_course3.jpg",
+                "imageAlt": "Python Logo "
             },
             {
                 "name": "Learn Python: Python for Beginners",
@@ -240,8 +240,8 @@
                 "enrolled": 2774,
                 "currentPrice": "E£269.99",
                 "oldPrice": "E£319.99",
-                "image": "../resources/images/py_course4.jpg",
-                "alt-image": "Python Logo "
+                "imageSrc": "../resources/images/py_course4.jpg",
+                "imageAlt": "Python Logo "
             },
             {
                 "name": "Python Beyond the Basics - Object-Oriented Programming",
@@ -250,8 +250,8 @@
                 "enrolled": 2935,
                 "currentPrice": "E£269.99",
                 "oldPrice": "E£519.99",
-                "image": "../resources/images/py_course5.jpg",
-                "alt-image": "Python Logo "
+                "imageSrc": "../resources/images/py_course5.jpg",
+                "imageAlt": "Python Logo "
             },
             {
                 "name": "Python From Scratch & Selenium WebDriver QA Automation 2022",
@@ -260,8 +260,8 @@
                 "enrolled": 1825,
                 "currentPrice": "E£269.99",
                 "oldPrice": "E£1299.99",
-                "image": "../resources/images/py_course6.jpg",
-                "alt-image": "Python Logo "
+                "imageSrc": "../resources/images/py_course6.jpg",
+                "imageAlt": "Python Logo "
             }
         ]
     },
@@ -277,8 +277,8 @@
                 "enrolled": 2739,
                 "currentPrice": "E£269.99",
                 "oldPrice": "E£679.99",
-                "image": "../resources/images/wd_course1.jpg",
-                "alt-image": "Web Development Logo "
+                "imageSrc": "../resources/images/wd_course1.jpg",
+                "imageAlt": "Web Development Logo "
             },
             {
                 "name": "The Complete 2020 Fullstack Web Developer Course",
@@ -287,8 +287,8 @@
                 "enrolled": 6160,
                 "currentPrice": "E£269.99",
                 "oldPrice": "E£1299.99",
-                "image": "../resources/images/wd_course2.jpg",
-                "alt-image": "Web Development Logo "
+                "imageSrc": "../resources/images/wd_course2.jpg",
+                "imageAlt": "Web Development Logo "
             },
             {
                 "name": "Introduction to Web Development",
@@ -297,8 +297,8 @@
                 "enrolled": 1723,
                 "currentPrice": "E£199.99",
                 "oldPrice": "E£229.99",
-                "image": "../resources/images/wd_course3.jpg",
-                "alt-image": "Web Development Logo "
+                "imageSrc": "../resources/images/wd_course3.jpg",
+                "imageAlt": "Web Development Logo "
             },
             {
                 "name": "Running a Web Development Business: The Complete Guide",
@@ -307,8 +307,8 @@
                 "enrolled": 1575,
                 "currentPrice": "E£269.99",
                 "oldPrice": "E£829.99",
-                "image": "../resources/images/wd_course4.jpg",
-                "alt-image": "Web Development Logo "
+                "imageSrc": "../resources/images/wd_course4.jpg",
+                "imageAlt": "Web Development Logo "
             },
             {
                 "name": "Ultimate Web Designer & Web Develop Course",
@@ -317,8 +317,8 @@
                 "enrolled": 13393,
                 "currentPrice": "E£319.99",
                 "oldPrice": "E£1699.99",
-                "image": "../resources/images/wd_course5.jpg",
-                "alt-image": "Web Development Logo "
+                "imageSrc": "../resources/images/wd_course5.jpg",
+                "imageAlt": "Web Development Logo "
             },
             {
                 "name": "Introduction to Programming",
@@ -327,8 +327,8 @@
                 "enrolled": 1335,
                 "currentPrice": "E£269.99",
                 "oldPrice": "E£1299.99",
-                "image": "../resources/images/wd_course6.jpg",
-                "alt-image": "Web Development Logo "
+                "imageSrc": "../resources/images/wd_course6.jpg",
+                "imageAlt": "Web Development Logo "
             }
         ]
     },
@@ -344,8 +344,8 @@
                 "enrolled": 1623,
                 "currentPrice": "E£269.99",
                 "oldPrice": "E£519.99",
-                "image": "../resources/images/ex_course1.jpg",
-                "alt-image": "Excel Logo "
+                "imageSrc": "../resources/images/ex_course1.jpg",
+                "imageAlt": "Excel Logo "
             },
             {
                 "name": "Microsoft Excel 2013 Advanced, Online Excel Training Course",
@@ -354,8 +354,8 @@
                 "enrolled": 3504,
                 "currentPrice": "E£269.99",
                 "oldPrice": "E£519.99",
-                "image": "../resources/images/ex_course2.jpg",
-                "alt-image": "Excel Logo "
+                "imageSrc": "../resources/images/ex_course2.jpg",
+                "imageAlt": "Excel Logo "
             },
             {
                 "name": "Microsoft Excel - From Beginner to Expert in 6 Hours",
@@ -364,8 +364,8 @@
                 "enrolled": 24595,
                 "currentPrice": "E£229.99",
                 "oldPrice": "E£269.99",
-                "image": "../resources/images/ex_course3.jpg",
-                "alt-image": "Excel Logo "
+                "imageSrc": "../resources/images/ex_course3.jpg",
+                "imageAlt": "Excel Logo "
             },
             {
                 "name": "Sharper skills using Microsoft excel 2010 for business",
@@ -374,8 +374,8 @@
                 "enrolled": 656,
                 "currentPrice": "E£199.99",
                 "oldPrice": "E£229.99",
-                "image": "../resources/images/ex_course4.jpg",
-                "alt-image": "Excel Logo "
+                "imageSrc": "../resources/images/ex_course4.jpg",
+                "imageAlt": "Excel Logo "
             },
             {
                 "name": "Learn Microsoft Excel 2013 - Advanced",
@@ -384,8 +384,8 @@
                 "enrolled": 372,
                 "currentPrice": "E£269.99",
                 "oldPrice": "E£679.99",
-                "image": "../resources/images/ex_course5.jpg",
-                "alt-image": "Excel Logo "
+                "imageSrc": "../resources/images/ex_course5.jpg",
+                "imageAlt": "Excel Logo "
             },
             {
                 "name": "Excel 2013",
@@ -394,8 +394,8 @@
                 "enrolled": 1442,
                 "currentPrice": "E£269.99",
                 "oldPrice": "E£419.99",
-                "image": "../resources/images/ex_course6.jpg",
-                "alt-image": "Excel Logo "
+                "imageSrc": "../resources/images/ex_course6.jpg",
+                "imageAlt": "Excel Logo "
             }
         ]
     },
