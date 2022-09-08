@@ -11,7 +11,7 @@
                 "enrolled": 20993,
                 "currentPrice": "E£269.99",
                 "oldPrice": "E£1299.99",
-                "imageSrc": "../resources/images/aws_course1.jpg",
+                "imageSrc": "/assets/images/aws_course1.jpg",
                 "imageAlt": "AWS Logo "
             },
             {
@@ -20,7 +20,7 @@
                 "rating": 4.6,
                 "enrolled": 5331,
                 "currentPrice": "E£369.99",
-                "imageSrc": "../resources/images/aws_course2.jpg",
+                "imageSrc": "/assets/images/aws_course2.jpg",
                 "imageAlt": "AWS Logo "
             },
             {
@@ -30,7 +30,7 @@
                 "enrolled": 1571,
                 "currentPrice": "E£269.99",
                 "oldPrice": "E£669.99",
-                "imageSrc": "../resources/images/aws_course3.jpg",
+                "imageSrc": "/assets/images/aws_course3.jpg",
                 "imageAlt": "AWS Logo "
             },
             {
@@ -40,7 +40,7 @@
                 "enrolled": 2829,
                 "currentPrice": "E£269.99",
                 "oldPrice": "E£519.99",
-                "imageSrc": "../resources/images/aws_course4.jpg",
+                "imageSrc": "/assets/images/aws_course4.jpg",
                 "imageAlt": "AWS Logo "
             },
             {
@@ -50,7 +50,7 @@
                 "enrolled": 2285,
                 "currentPrice": "E£269.99",
                 "oldPrice": "E£829.99",
-                "imageSrc": "../resources/images/aws_course5.jpg",
+                "imageSrc": "/assets/images/aws_course5.jpg",
                 "imageAlt": "AWS Logo "
             },
             {
@@ -59,7 +59,7 @@
                 "rating": 4.6,
                 "enrolled": 1472,
                 "currentPrice": "E£319.99",
-                "imageSrc": "../resources/images/aws_course6.jpg",
+                "imageSrc": "/assets/images/aws_course6.jpg",
                 "imageAlt": "AWS Logo "
             }
         ]
@@ -76,7 +76,7 @@
                 "enrolled": 32044,
                 "currentPrice": "E£269.99",
                 "oldPrice": "E£1299.99",
-                "imageSrc": "../resources/images/ds_course1.jpg",
+                "imageSrc": "/assets/images/ds_course1.jpg",
                 "imageAlt": "Data Science Logo "
             },
             {
@@ -86,7 +86,7 @@
                 "enrolled": 27633,
                 "currentPrice": "E£229.99",
                 "oldPrice": "E£269.99",
-                "imageSrc": "../resources/images/ds_course2.jpg",
+                "imageSrc": "/assets/images/ds_course2.jpg",
                 "imageAlt": "Data Science Logo "
             },
             {
@@ -96,7 +96,7 @@
                 "enrolled": 8508,
                 "currentPrice": "E£229.99",
                 "oldPrice": "E£1199.99",
-                "imageSrc": "../resources/images/ds_course4.jpg",
+                "imageSrc": "/assets/images/ds_course4.jpg",
                 "imageAlt": "Data Science Logo "
             },
             {
@@ -106,7 +106,7 @@
                 "enrolled": 47137,
                 "currentPrice": "E£269.99",
                 "oldPrice": "E£1399.99",
-                "imageSrc": "../resources/images/ds_course3.jpg",
+                "imageSrc": "/assets/images/ds_course3.jpg",
                 "imageAlt": "Data Science Logo "
             },
             {
@@ -116,7 +116,7 @@
                 "enrolled": 15123,
                 "currentPrice": "E£319.99",
                 "oldPrice": "E£1599.99",
-                "imageSrc": "../resources/images/ds_course5.jpg",
+                "imageSrc": "/assets/images/ds_course5.jpg",
                 "imageAlt": "Data Science Logo "
             },
             {
@@ -126,7 +126,7 @@
                 "enrolled": 7991,
                 "currentPrice": "E£319.99",
                 "oldPrice": "E£1599.99",
-                "imageSrc": "../resources/images/ds_course6.jpg",
+                "imageSrc": "/assets/images/ds_course6.jpg",
                 "imageAlt": "Data Science Logo "
             }
         ]
@@ -143,7 +143,7 @@
                 "enrolled": 788,
                 "currentPrice": "E£199.99",
                 "oldPrice": "E£229.99",
-                "imageSrc": "../resources/images/js_course1.jpg",
+                "imageSrc": "/assets/images/js_course1.jpg",
                 "imageAlt": "JavaScript Logo "
             },
             {
@@ -153,7 +153,7 @@
                 "enrolled": 1898,
                 "currentPrice": "E£269.99",
                 "oldPrice": "E£1399.99",
-                "imageSrc": "../resources/images/js_course2.jpg",
+                "imageSrc": "/assets/images/js_course2.jpg",
                 "imageAlt": "JavaScript Logo "
             },
             {
@@ -163,7 +163,7 @@
                 "enrolled": 45205,
                 "currentPrice": "E£319.99",
                 "oldPrice": "E£1299.99",
-                "imageSrc": "../resources/images/js_course3.jpg",
+                "imageSrc": "/assets/images/js_course3.jpg",
                 "imageAlt": "JavaScript Logo "
             },
             {
@@ -173,7 +173,7 @@
                 "enrolled": 14143,
                 "currentPrice": "E£229.99",
                 "oldPrice": "E£679.99",
-                "imageSrc": "../resources/images/js_course4.jpg",
+                "imageSrc": "/assets/images/js_course4.jpg",
                 "imageAlt": "JavaScript Logo "
             },
             {
@@ -183,7 +183,7 @@
                 "enrolled": 1155,
                 "currentPrice": "E£269.99",
                 "oldPrice": "E£829.99",
-                "imageSrc": "../resources/images/js_course5.jpg",
+                "imageSrc": "/assets/images/js_course5.jpg",
                 "imageAlt": "JavaScript Logo "
             },
             {
@@ -193,7 +193,7 @@
                 "enrolled": 796,
                 "currentPrice": "E£229.99",
                 "oldPrice": "E£319.99",
-                "imageSrc": "../resources/images/js_course6.jpg",
+                "imageSrc": "/assets/images/js_course6.jpg",
                 "imageAlt": "JavaScript Logo "
             }
         ]
@@ -210,7 +210,7 @@
                 "enrolled": 2985,
                 "currentPrice": "E£269.99",
                 "oldPrice": "E£679.99",
-                "imageSrc": "../resources/images/py_course1.jpg",
+                "imageSrc": "/assets/images/py_course1.jpg",
                 "imageAlt": "Python Logo "
             },
             {
@@ -220,7 +220,7 @@
                 "enrolled": 18017,
                 "currentPrice": "E£319.99",
                 "oldPrice": "E£1599.99",
-                "imageSrc": "../resources/images/py_course2.jpg",
+                "imageSrc": "/assets/images/py_course2.jpg",
                 "imageAlt": "Python Logo "
             },
             {
@@ -230,7 +230,7 @@
                 "enrolled": 1798,
                 "currentPrice": "E£269.99",
                 "oldPrice": "E£679.99",
-                "imageSrc": "../resources/images/py_course3.jpg",
+                "imageSrc": "/assets/images/py_course3.jpg",
                 "imageAlt": "Python Logo "
             },
             {
@@ -240,7 +240,7 @@
                 "enrolled": 2774,
                 "currentPrice": "E£269.99",
                 "oldPrice": "E£319.99",
-                "imageSrc": "../resources/images/py_course4.jpg",
+                "imageSrc": "/assets/images/py_course4.jpg",
                 "imageAlt": "Python Logo "
             },
             {
@@ -250,7 +250,7 @@
                 "enrolled": 2935,
                 "currentPrice": "E£269.99",
                 "oldPrice": "E£519.99",
-                "imageSrc": "../resources/images/py_course5.jpg",
+                "imageSrc": "/assets/images/py_course5.jpg",
                 "imageAlt": "Python Logo "
             },
             {
@@ -260,7 +260,7 @@
                 "enrolled": 1825,
                 "currentPrice": "E£269.99",
                 "oldPrice": "E£1299.99",
-                "imageSrc": "../resources/images/py_course6.jpg",
+                "imageSrc": "/assets/images/py_course6.jpg",
                 "imageAlt": "Python Logo "
             }
         ]
@@ -277,7 +277,7 @@
                 "enrolled": 2739,
                 "currentPrice": "E£269.99",
                 "oldPrice": "E£679.99",
-                "imageSrc": "../resources/images/wd_course1.jpg",
+                "imageSrc": "/assets/images/wd_course1.jpg",
                 "imageAlt": "Web Development Logo "
             },
             {
@@ -287,7 +287,7 @@
                 "enrolled": 6160,
                 "currentPrice": "E£269.99",
                 "oldPrice": "E£1299.99",
-                "imageSrc": "../resources/images/wd_course2.jpg",
+                "imageSrc": "/assets/images/wd_course2.jpg",
                 "imageAlt": "Web Development Logo "
             },
             {
@@ -297,7 +297,7 @@
                 "enrolled": 1723,
                 "currentPrice": "E£199.99",
                 "oldPrice": "E£229.99",
-                "imageSrc": "../resources/images/wd_course3.jpg",
+                "imageSrc": "/assets/images/wd_course3.jpg",
                 "imageAlt": "Web Development Logo "
             },
             {
@@ -307,7 +307,7 @@
                 "enrolled": 1575,
                 "currentPrice": "E£269.99",
                 "oldPrice": "E£829.99",
-                "imageSrc": "../resources/images/wd_course4.jpg",
+                "imageSrc": "/assets/images/wd_course4.jpg",
                 "imageAlt": "Web Development Logo "
             },
             {
@@ -317,7 +317,7 @@
                 "enrolled": 13393,
                 "currentPrice": "E£319.99",
                 "oldPrice": "E£1699.99",
-                "imageSrc": "../resources/images/wd_course5.jpg",
+                "imageSrc": "/assets/images/wd_course5.jpg",
                 "imageAlt": "Web Development Logo "
             },
             {
@@ -327,7 +327,7 @@
                 "enrolled": 1335,
                 "currentPrice": "E£269.99",
                 "oldPrice": "E£1299.99",
-                "imageSrc": "../resources/images/wd_course6.jpg",
+                "imageSrc": "/assets/images/wd_course6.jpg",
                 "imageAlt": "Web Development Logo "
             }
         ]
@@ -344,7 +344,7 @@
                 "enrolled": 1623,
                 "currentPrice": "E£269.99",
                 "oldPrice": "E£519.99",
-                "imageSrc": "../resources/images/ex_course1.jpg",
+                "imageSrc": "/assets/images/ex_course1.jpg",
                 "imageAlt": "Excel Logo "
             },
             {
@@ -354,7 +354,7 @@
                 "enrolled": 3504,
                 "currentPrice": "E£269.99",
                 "oldPrice": "E£519.99",
-                "imageSrc": "../resources/images/ex_course2.jpg",
+                "imageSrc": "/assets/images/ex_course2.jpg",
                 "imageAlt": "Excel Logo "
             },
             {
@@ -364,7 +364,7 @@
                 "enrolled": 24595,
                 "currentPrice": "E£229.99",
                 "oldPrice": "E£269.99",
-                "imageSrc": "../resources/images/ex_course3.jpg",
+                "imageSrc": "/assets/images/ex_course3.jpg",
                 "imageAlt": "Excel Logo "
             },
             {
@@ -374,7 +374,7 @@
                 "enrolled": 656,
                 "currentPrice": "E£199.99",
                 "oldPrice": "E£229.99",
-                "imageSrc": "../resources/images/ex_course4.jpg",
+                "imageSrc": "/assets/images/ex_course4.jpg",
                 "imageAlt": "Excel Logo "
             },
             {
@@ -384,7 +384,7 @@
                 "enrolled": 372,
                 "currentPrice": "E£269.99",
                 "oldPrice": "E£679.99",
-                "imageSrc": "../resources/images/ex_course5.jpg",
+                "imageSrc": "/assets/images/ex_course5.jpg",
                 "imageAlt": "Excel Logo "
             },
             {
@@ -394,7 +394,7 @@
                 "enrolled": 1442,
                 "currentPrice": "E£269.99",
                 "oldPrice": "E£419.99",
-                "imageSrc": "../resources/images/ex_course6.jpg",
+                "imageSrc": "/assets/images/ex_course6.jpg",
                 "imageAlt": "Excel Logo "
             }
         ]

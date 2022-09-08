@@ -1,8 +1,10 @@
+import React from 'react';
+
 class CourseCard extends React.Component {
 	render() {
 		return (
 			<section className="course">
-				<img src={this.props.imageSrc} alt={this.props.imageAlt}/>
+				<img src={`${process.env.PUBLIC_URL}${this.props.imageSrc}`} alt={this.props.imageAlt}/>
 				<h4 className="course-name">{this.props.courseName}</h4>
 				<h5 className="author">{this.props.author}</h5>
 				<Rating rate={this.props.rate} enrolled={this.props.enrolled}/>
@@ -29,4 +31,8 @@ class Rating extends React.Component {
 			</section>
 		);
 	}
+}
+
+export {
+	CourseCard
 }
