@@ -1,36 +1,23 @@
 import React from 'react';
 import {CourseCard} from './courseCard';
+import {Slicker} from './courseCard';
+import {NavBar} from './navBar';
 import ReactDOM from 'react-dom/client';
+
 import './styles/home.css';
 
 const courses = ReactDOM.createRoot(document.querySelector("#courses"));
+const navBar = ReactDOM.createRoot(document.querySelector("#nav-bar"));
 let coursesCategories = document.querySelector(".categories");
-let searchBar = document.querySelector("#search-bar");
 let apiUrl = "http://localhost:8000/";
 let allCoursesCache = [];
 let currentShownCategory = "JavaScript";
 
-window.onload = () => fetchCoursesOfCategory(currentShownCategory);
-
-// search bar typing listener
-let debouncer = (callback, delay) => {
-	let timer;
-	return function () {
-		const context = this;
-		const args = arguments;
-		clearTimeout(timer);
-		timer = setTimeout(() => callback.apply(context, args), delay);
-	}
+window.onload = () => {
+	navBar.render(<NavBar cache={allCoursesCache} searchMethod={fetchAllCoursesIn} filter={filterCoursesByPattern}
+	                      display={displaySearchResult}/>);
+	fetchCoursesOfCategory(currentShownCategory);
 };
-searchBar.addEventListener("input", debouncer(event => {
-	let searchQuery = event.target.value;
-	if (searchQuery === "") return;
-	if (allCoursesCache.length === 0) fetchAllCoursesIn(allCoursesCache, searchQuery);
-	else {
-		let filteredCourses = filterCoursesByPattern(searchQuery);
-		displaySearchResult(filteredCourses);
-	}
-}, 500));
 
 // changing viewed course-category listener
 coursesCategories.addEventListener("click", event => {
@@ -82,7 +69,7 @@ function displaySearchResult(categoryList) {
 function filterCoursesByPattern(searchQuery) {
 	let filteredCourses = [];
 	for (let course of allCoursesCache) {
-		if (course.name.search(new RegExp(searchQuery, "i")) !== -1) {
+		if (course.courseName.search(new RegExp(searchQuery, "i")) !== -1) {
 			filteredCourses.push(course);
 		}
 	}
@@ -115,12 +102,8 @@ function displayCourses(coursesDataArray) {
 	let index = 1;
 	let coursesCard = coursesDataArray.map((course) => {
 		++index;
-		return (
-			<CourseCard key={index} imageSrc={course.imageSrc} imageAlt={course.imageAlt} courseName={course.name}
-			            author={course.author} rate={course.rating} enrolled={course.enrolled}
-			            price={course.currentPrice}
-			            oldPrice={course.oldPrice}/>
-		)
+		return (<CourseCard key={index} {...course}/>)
 	});
-	courses.render(coursesCard);
+	const slicker = <Slicker courses={coursesCard}/>
+	courses.render(slicker);
 }

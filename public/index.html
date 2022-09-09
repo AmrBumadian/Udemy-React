@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <title>Udemy</title>
     <meta charset="UTF-8"/>
@@ -9,38 +9,7 @@
 </head>
 
 <body>
-<nav>
-    <button id="hidden-menu">
-        <i class="fa fa-bars fa-lg" aria-hidden="true"></i>
-    </button>
-    <img src="./assets/images/udemy-logo.svg" class="logo" alt="Udemy Logo"/>
-    <button>Categories</button>
-    <form>
-        <button type="submit">
-            <i class="fa fa-search fa-lg" aria-hidden="true"></i>
-        </button>
-        <input id="search-bar" type="text" placeholder="Search for anything"/>
-    </form>
-    <button id="udemy-business">Udemy Business</button>
-    <button id="udemy-teach">Teach on Udemy</button>
-    <button>
-        <i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i>
-    </button>
-    <button id="login">Log in</button>
-    <button id="signup">Sign up</button>
-    <button id="language">
-        <i class="fa fa-globe fa-lg" aria-hidden="true"></i>
-    </button>
-    <span id="hidden-icons">
-            <button>
-                <i class="fa fa-search fa-lg" aria-hidden="true"></i>
-            </button>
-            <button>
-                <i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i>
-            </button>
-        </span>
-</nav>
-
+<nav id="nav-bar"></nav>
 <header>
     <section>
         <h2> 24-Hour Flash Sale</h2>
@@ -77,8 +46,6 @@
         </p>
         <button id="explore-category">Explore JavaScript</button>
         <section id="courses" class="courses"></section>
-        <button id="prev-button" class="slick-next" type="button"><i class="fa fa-chevron-left"></i></button>
-        <button id="next-button" class="slick-prev" type="button"><i class="fa fa-chevron-right"></i></button>
     </section>
 </main>
 <script src="../src/index.js" type="text/jsx"></script>
