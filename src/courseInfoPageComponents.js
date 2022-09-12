@@ -131,11 +131,44 @@ class CourseInstructors extends React.Component {
 	}
 }
 
+class CourseSideInfo extends React.Component {
+	render() {
+		let currentKey = 0;
+		let contents = this.props.courseSummaryContents.map((c) => <li key={currentKey++}><span>{c}</span></li>);
+		return (
+			<section id="side-list">
+				<img src={`${process.env.PUBLIC_URL}${this.props.courseImage}`} alt="course logo"/>
+				<section id="side-main">
+					<h2 className="price">{this.props.currentPrice}</h2>
+					<button className="purple-button">Add to cart</button>
+					<button className="white-button">Buy now</button>
+					<span className="caption">30-Day Money-Back Guarantee</span>
+					<h3>This course includes:</h3>
+					<ul className="side-content">{contents}</ul>
+					<section className="links">
+						<a>Share</a>
+						<a>Gift this course</a>
+						<a>Apply Coupon</a>
+					</section>
+				</section>
+				<section id="side-footer">
+					<h2>Training 5 or more people?</h2>
+					<p>Get your team access to 17,000+ top Udemy courses anytime, anywhere.</p>
+					<button className="white-button">Try Udemy Business</button>
+				</section>
+			</section>
+		);
+	}
+}
+
 
 class CourseFullPage extends React.Component {
 	render() {
+		console.log(this.props.courseImage);
 		return (
 			<main>
+				<CourseSideInfo currentPrice={this.props.currentPrice} courseImage={this.props.courseImage}
+				                courseSummaryContents={this.props.courseSummaryContents}/>
 				<CourseOverview learning={this.props.learning}/>
 				<CourseContent courseContent={this.props.courseContent}/>
 				<CourseDescription requirements={this.props.requirements} description={this.props.description}/>

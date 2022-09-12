@@ -172,3 +172,97 @@ main {
     flex-direction: column;
     height: 7rem;
 }
+
+#side-list {
+    z-index: 1;
+    position: absolute;
+    height: fit-content;
+    width: 25%;
+    right: 9%;
+    top: 17%;
+    list-style: none;
+    background-color: white;
+    box-shadow: 0 0 5px 5px rgba(0,0,0,0.1);
+}
+
+#side-list > img {
+    width: 100%;
+}
+
+#side-main {
+    margin-bottom: 1rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+#side-main > .price {
+    width: 100%;
+    text-align: left;
+    font-size: 2rem;
+    margin: 1.5rem 1.5rem;
+    font-weight: 700;
+}
+
+#side-list button {
+    position: relative;
+    margin: 1rem auto;
+    border: 1px solid black;
+    width: 55%;
+    cursor: pointer;
+    display: flex;
+    padding: 1rem 3rem;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.purple-button {
+    color: white;
+    background-color: #a435f0;
+    border: none !important;
+}
+.purple-button:hover {
+    background-color: #8710d8;
+}
+.white-button:hover {
+    background-color: rgba(0,0,0,0.1);
+}
+
+.caption {
+    display: flex;
+    position: relative;
+    margin: 1rem 0;
+    justify-content: center;
+    font-size: 0.8rem;
+}
+
+#side-main h3 {
+    font-size: 1rem;
+    padding: 0 1rem;
+}
+
+.side-content {
+    list-style: none;
+    padding: 1rem 3rem;
+    line-height: 1.5rem;
+    font-size: 0.9rem;
+}
+
+#side-main .links {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1rem;
+    font-weight: 600;
+}
+#side-main .links > a {
+    border-bottom: 1px solid black;
+}
+
+#side-footer {
+    padding: 0.5rem 1.5rem;
+    font-size: 0.9rem;
+}
+#side-footer > h2 {
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+}

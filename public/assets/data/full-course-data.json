@@ -13,7 +13,8 @@
 				"English"
 			]
 		},
-		"currentPrice": "229.99",
+		"courseImage": "/assets/images/js_course1.jpg",
+		"currentPrice": "E£229.99",
 		"oldPrice": "",
 		"learning": [
 			"Extensive, informative and interesting video lecture",
@@ -85,6 +86,15 @@
 					"Three Types of Javascript Dialogs"
 				]
 			}
+		],
+		"courseSummaryContents": [
+			"2.5 hours on-demand video",
+			"1 article",
+			"1 downloadable resource",
+			"6 coding exercises",
+			"Full lifetime access",
+			"Access on mobile and TV",
+			"Certificate of completion"
 		]
 	}
 }
