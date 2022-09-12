@@ -1,0 +1,126 @@
+* {
+    box-sizing: content-box;
+}
+
+h2 {
+    font-weight: 600;
+}
+
+/* body and all elements */
+body {
+    font-family: "udemy sans", Helvetica, Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body * {
+    background: none;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+/* Nav */
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 4.5rem;
+    z-index: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+}
+
+nav > * {
+    margin: 0 0.5rem;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+nav > button {
+    font-size: 0.9rem;
+    color: black;
+    border: none;
+}
+
+nav > button:hover {
+    color: blueviolet;
+}
+
+#hidden-icons,
+#hidden-menu {
+    display: none;
+}
+
+.logo {
+    height: 50%;
+    margin-left: 1.5rem;
+}
+
+#login,
+#signup,
+#language {
+    border: 1px solid black;
+    color: black;
+}
+
+#login,
+#signup {
+    font-weight: bold;
+}
+
+#login:hover,
+#language:hover {
+    background-color: gainsboro;
+    color: black;
+}
+
+#signup:hover {
+    background-color: white;
+    color: blueviolet;
+}
+
+#login {
+    padding: 0.6rem 1.5rem;
+}
+
+#language {
+    padding: 0.6rem 0.7rem;
+    margin-right: 1.5rem;
+}
+
+#signup {
+    background-color: black;
+    color: white;
+    padding: 0.6rem 0.9rem;
+}
+
+/* Search */
+
+nav > form {
+    display: flex;
+    align-items: center;
+    margin-right: 1.5rem;
+    width: 100%;
+    padding: 0.6rem;
+    background-color: rgba(0, 0, 0, 0.05);
+    border: 1px black solid;
+    border-radius: 2rem;
+}
+
+#search-bar {
+    height: 1.8rem;
+    width: 100%;
+    margin-left: 0.9rem;
+    font-size: 1rem;
+    outline: none;
+}
+
+.stars {
+    color: goldenrod;
+    font-weight: 600;
+    margin-right: 1%;
+}

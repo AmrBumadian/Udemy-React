@@ -105,16 +105,32 @@ class CourseCard extends React.Component {
 }
 
 class Rating extends React.Component {
+
+	appendRatingStars(courseRating) {
+		let currentKey = 0;
+		let stars = [];
+		let rateFloat = parseFloat(courseRating);
+		while (rateFloat >= 1) {
+			let star = <i key={currentKey++} className="fa fa-star" aria-hidden="true"></i>
+			stars.push(star);
+			--rateFloat;
+		}
+		if (rateFloat > 0) {
+			let star = <i key={currentKey++} className="fa fa-star-half-o" aria-hidden="true"></i>
+			stars.push(star);
+		}
+		return stars;
+	}
+
 	render() {
 		return (
 			<section className="rating">
-				<span>{this.props.rate}</span>
-				<i className="fa fa-star" aria-hidden="true"></i>
-				<i className="fa fa-star" aria-hidden="true"></i>
-				<i className="fa fa-star" aria-hidden="true"></i>
-				<i className="fa fa-star" aria-hidden="true"></i>
-				<i className="fa fa-star-half-o" aria-hidden="true"></i>
-				<span className="enrolled">({this.props.enrolled})</span>
+				<section className="stars">
+					<span>{this.props.rate}</span>
+					{this.appendRatingStars(this.props.rate)}
+				</section>
+				{this.props.ratesCount && <span className="underlined">{`(${this.props.ratesCount} ratings)`}</span>}
+				<span className="enrolled">{this.props.enrolled} students</span>
 			</section>
 		);
 	}
@@ -122,5 +138,6 @@ class Rating extends React.Component {
 
 export {
 	CourseCard,
-	Slicker
+	Slicker,
+	Rating
 }

@@ -1,0 +1,54 @@
+/* Nav */
+
+nav {
+    position: relative;
+    height: 4rem;
+}
+
+/* header */
+
+header {
+    color: white;
+    background-color: #1c1d1f;
+    margin: 0.5rem 0;
+    width: 100%;
+    font-family: sans-serif;
+    padding: 1.5rem;
+}
+
+header > section {
+    position: relative;
+    justify-content: left;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    left: 5%;
+    width: 55%;
+    padding: 1rem;
+}
+
+header > section > h2 {
+    font-size: 2rem;
+}
+
+header > section > p {
+    font-size: 1.2rem;
+}
+
+header > section > * {
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.rating > * {
+    padding-right: 0.5rem;
+}
+
+.stars {
+    display: inline-block;
+}
+
+.underlined {
+    text-decoration: underline;
+    color: #CEC0FC;
+}
+
