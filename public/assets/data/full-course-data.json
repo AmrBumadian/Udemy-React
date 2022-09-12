@@ -28,18 +28,24 @@
 			"Some basic knowledge of HTML is required for this course."
 		],
 		"description": [
-			"Take this Javascript training course and start learning Javascript today.\n\n\"As a business guy I have no place in programming.\" Ten years ago you could have gotten away with that statement. Today you say that to your colleagues and they scoff at you before they go back to their computers to fix real problems and do real work.\n\nIf you want to do something useful start by learning Javascript . In these days when the browser is central to all computer use knowing \"the language of the browser\" is the most important step. A few years ago Javascript potential was uncertain and many programmers considered it useless. These days however competent programmers have identified Javascript real potential and uses and it has gone from a toy language to the main language of the browser. It has become one of the most useful languages of this era. Every developer needs at least a basic understanding of Javascript. A developer who knows Javascript is the rockstar of the company and is in constant demand by employers. Our online Javascript\n\ncourse will get you started by teaching all the essential aspects of coding in Javascript. So... what's it gonna be? Do you want to supercharge your career and be in constant demand by employers? Do you want to learn how to create dynamic and innovative Javascript documents? Start programming today with our Javascript course for Beginners training and take control of your career."
+			"Take this Javascript training course and start learning Javascript today.",
+			"As a business guy I have no place in programming. Ten years ago you could have gotten away with that statement. Today you say that to your colleagues and they scoff at you before they go back to their computers to fix real problems and do real work.",
+			"If you want to do something useful start by learning Javascript . In these days when the browser is central to all computer use knowing \"the language of the browser\" is the most important step. A few years ago Javascript potential was uncertain and many programmers considered it useless. These days however competent programmers have identified Javascript real potential and uses and it has gone from a toy language to the main language of the browser. It has become one of the most useful languages of this era. Every developer needs at least a basic understanding of Javascript. A developer who knows Javascript is the rockstar of the company and is in constant demand by employers. Our online Javascript",
+			"course will get you started by teaching all the essential aspects of coding in Javascript. So... what's it gonna be? Do you want to supercharge your career and be in constant demand by employers? Do you want to learn how to create dynamic and innovative Javascript documents? Start programming today with our Javascript course for Beginners training and take control of your career."
 		],
 		"instructors": [
 			{
+				"pic": "/assets/images/js_course1_author1.jpg",
 				"name": "Tech Learning Network",
 				"title": "Career Building Digital Skills Training",
-				"pic": "",
 				"rate": "4.3",
 				"reviewsCount": "13866 ",
 				"studentsCount": "311717 ",
 				"coursesCount": "62",
-				"bio": "Tech Learning Network is a streaming video network that teaches digital skills such as web development, graphic design, and digital productivity.  We believe that education should be accessible to all.  You can find Tech Learning Network content on Udemy, our website and throughout online video world.\n\nThe Tech Learning Network specializes in teaching accessible technical skills to people just getting started in technical careers including web development, digital design, and other career paths enabled by technology."
+				"bio": [
+					"Tech Learning Network is a streaming video network that teaches digital skills such as web development, graphic design, and digital productivity.  We believe that education should be accessible to all.  You can find Tech Learning Network content on Udemy, our website and throughout online video world.",
+					"The Tech Learning Network specializes in teaching accessible technical skills to people just getting started in technical careers including web development, digital design, and other career paths enabled by technology."
+				]
 			}
 		],
 		"courseContent": [

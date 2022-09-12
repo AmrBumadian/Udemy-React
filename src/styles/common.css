@@ -124,3 +124,13 @@ nav > form {
     font-weight: 600;
     margin-right: 1%;
 }
+
+.underlined {
+    text-decoration: underline;
+    color: #CEC0FC;
+}
+
+.bold-underlined {
+    color: #5624d0;
+    text-decoration: underline;
+}

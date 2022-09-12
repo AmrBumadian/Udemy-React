@@ -47,8 +47,128 @@ header > section > * {
     display: inline-block;
 }
 
-.underlined {
-    text-decoration: underline;
-    color: #CEC0FC;
+#course-nav {
+    height: 2.5rem;
+    border-bottom: 1px solid rgba(155, 155, 155, 0.5);
+    margin-bottom: 2rem;
 }
 
+#course-nav > section {
+    display: flex;
+    justify-content: space-evenly;
+    width: 55%;
+    height: 2.5rem;
+    color: gray;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 1rem 0 0;
+    margin-left: 6rem;
+}
+
+#course-nav > section > span {
+    align-content: center;
+    height: 2rem;
+    padding: 0 2rem;
+}
+
+#course-nav > section > span:hover {
+    color: black;
+    border-bottom: 2px solid black;
+}
+
+main {
+    margin-left: 4rem;
+}
+
+#overview {
+    line-height: 1.5rem;
+    padding: 1.5rem;
+    width: 55%;
+    border: 1px solid rgba(155, 155, 155, 0.5);
+    margin-bottom: 2rem;
+}
+
+#overview > h2 {
+    margin-bottom: 1rem;
+}
+
+#overview > ul {
+    font-size: 1rem;
+    list-style: none;
+    line-height: 2rem;
+}
+
+#overview > ul > li {
+    color: rgba(0, 0, 0, 0.7);
+    padding-right: 1rem;
+}
+
+#overview > ul li:before {
+    padding: 0.5rem;
+    content: '✓';
+    font-weight: bold;
+}
+
+#requirements, #description {
+    line-height: 1.5rem;
+    padding: 1.5rem;
+    width: 55%;
+    font-size: 0.9rem;
+}
+
+#requirements > h2, #description > h2 {
+    font-size: 1.5rem;
+    color: black;
+    margin-bottom: 1.5rem;
+}
+
+#requirements > ul {
+    margin-left: 1.2rem;
+}
+
+#description > p {
+    margin-bottom: 1rem;
+}
+
+#instructors {
+    width: 55%;
+}
+
+.instructor {
+    margin-bottom: 1rem;
+}
+
+.instructor > *, .instructor > * > * {
+    padding: 0.5rem 0.5rem 0.5rem 0;
+}
+
+.instructor p {
+    line-height: 1.5rem;
+    font-size: 0.8rem;
+}
+
+.instructor > h4 {
+    padding-top: 0;
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: 500;
+}
+
+.instructor > section > img {
+    padding: 0;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    margin-right: 1rem;
+    width: 7rem;
+    height: 7rem;
+}
+
+.instructor-info {
+    display: flex;
+}
+
+.info, .icons {
+    display: inline-flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 7rem;
+}

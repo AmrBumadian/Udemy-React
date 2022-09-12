@@ -2,7 +2,8 @@ import React from 'react';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faStar, faStarHalfStroke, faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons'
 
 class PrevArrow extends React.Component {
 	constructor(props) {
@@ -12,7 +13,7 @@ class PrevArrow extends React.Component {
 
 	render() {
 		return (
-			<button id="prev-button" onClick={this.props.onClick}><i className="fa fa-chevron-left"/></button>
+			<button id="prev-button" onClick={this.props.onClick}><FontAwesomeIcon icon={faChevronLeft}/></button>
 		)
 	}
 }
@@ -25,7 +26,7 @@ class NextArrow extends React.Component {
 
 	render() {
 		return (
-			<button id="next-button" onClick={this.props.onClick}><i className="fa fa-chevron-right"/></button>
+			<button id="next-button" onClick={this.props.onClick}><FontAwesomeIcon icon={faChevronRight}/></button>
 		)
 	}
 }
@@ -111,12 +112,12 @@ class Rating extends React.Component {
 		let stars = [];
 		let rateFloat = parseFloat(courseRating);
 		while (rateFloat >= 1) {
-			let star = <i key={currentKey++} className="fa fa-star" aria-hidden="true"></i>
+			let star = <FontAwesomeIcon key={currentKey++} icon={faStar} />
 			stars.push(star);
 			--rateFloat;
 		}
 		if (rateFloat > 0) {
-			let star = <i key={currentKey++} className="fa fa-star-half-o" aria-hidden="true"></i>
+			let star = <FontAwesomeIcon key={currentKey++} icon={faStarHalfStroke} />
 			stars.push(star);
 		}
 		return stars;
