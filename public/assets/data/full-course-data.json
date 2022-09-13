@@ -15,7 +15,8 @@
 		},
 		"courseImage": "/assets/images/js_course1.jpg",
 		"currentPrice": "E£229.99",
-		"oldPrice": "",
+		"oldPrice": "E£699.99",
+		"discount": "40%",
 		"learning": [
 			"Extensive, informative and interesting video lecture",
 			"Lab Exercises",
@@ -49,44 +50,54 @@
 				]
 			}
 		],
-		"courseContent": [
-			{
-				"sectionName": "Javascript for Beginners",
-				"contents": [
-					"Javascript for Beginners",
-					"Course Information"
-				]
-			},
-			{
-				"sectionName": "Chapter1: Hello javascript!",
-				"contents": [
-					"Introducing Mark and the Course",
-					"Hello World in Javascript",
-					"Where To Put Javascript"
-				]
-			},
-			{
-				"sectionName": "Chapter2: Storing Information in Variables",
-				"contents": [
-					"Learning to use Variables",
-					"Variable Operators"
-				]
-			},
-			{
-				"sectionName": "Chapter3: Conditional Statements",
-				"contents": [
-					"Simple Conditionals",
-					"If Else If Statements",
-					"Switch... Case... Break Statements"
-				]
-			},
-			{
-				"sectionName": "Chapter4: Dialog Boxes",
-				"contents": [
-					"Three Types of Javascript Dialogs"
-				]
-			}
-		],
+		"courseContent": {
+			"sectionCount": "13",
+			"lectureCount": "48",
+			"totalDuration": "3h 2m",
+			"lectures": [
+				{
+					"sectionName": "Javascript for Beginners",
+					"contents": [
+						"Javascript for Beginners",
+						"Course Information"
+					],
+					"duration": "4min"
+				},
+				{
+					"sectionName": "Chapter 1: Hello javascript!",
+					"contents": [
+						"Introducing Mark and the Course",
+						"Hello World in Javascript",
+						"Where To Put Javascript"
+					],
+					"duration": "21min"
+				},
+				{
+					"sectionName": "Chapter 2: Storing Information in Variables",
+					"contents": [
+						"Learning to use Variables",
+						"Variable Operators"
+					],
+					"duration": "18min"
+				},
+				{
+					"sectionName": "Chapter 3: Conditional Statements",
+					"contents": [
+						"Simple Conditionals",
+						"If Else If Statements",
+						"Switch... Case... Break Statements"
+					],
+					"duration": "18min"
+				},
+				{
+					"sectionName": "Chapter 4: Dialog Boxes",
+					"contents": [
+						"Three Types of Javascript Dialogs"
+					],
+					"duration": "7min"
+				}
+			]
+		},
 		"courseSummaryContents": [
 			"2.5 hours on-demand video",
 			"1 article",

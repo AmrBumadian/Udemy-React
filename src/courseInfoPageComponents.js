@@ -1,7 +1,14 @@
 import React from 'react';
 import {Rating} from './courseCard';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faAward, faCirclePlay, faStar, faUserGroup} from '@fortawesome/free-solid-svg-icons'
+import {
+	faAward,
+	faCirclePlay,
+	faStar,
+	faUserGroup,
+	faChevronDown,
+	faChevronUp
+} from '@fortawesome/free-solid-svg-icons'
 
 class CourseHeader extends React.Component {
 	render() {
@@ -45,25 +52,89 @@ class CourseOverview extends React.Component {
 	}
 }
 
+class ChapterLabel extends React.Component {
+
+	constructor(props) {
+		super(props);
+		this.state = {
+			dropped: false
+		}
+	}
+
+	toggle() {
+		if (this.state.dropped) {
+			document.querySelector(`#${this.props.labelFor}`).setAttribute("hidden", "true");
+		} else {
+			document.querySelector(`#${this.props.labelFor}`).removeAttribute("hidden");
+		}
+		this.setState({dropped: !this.state.dropped});
+	}
+
+	render() {
+		return (
+			<label htmlFor={this.props.sectionName} onClick={() => {
+				this.toggle()
+			}}>
+				<span>
+					{(this.state.dropped) ? <FontAwesomeIcon icon={faChevronUp}/> :
+						<FontAwesomeIcon icon={faChevronDown}/>}
+					<span>{this.props.sectionName}</span>
+				</span>
+				<span id="chapter-summary">
+					<span>{this.props.lecturesCount} lectures</span>
+					<span>{" • "}</span>
+					<span>{this.props.duration}</span>
+				</span>
+			</label>
+		)
+	}
+}
+
 class CourseContent extends React.Component {
 
 	render() {
 		let currentKey = 0;
-		let courseContent = this.props.courseContent.map((section) => {
+		let currentChapter = 1;
+		let courseContent = this.props.courseContent.lectures.map((section) => {
 			let childKey = 0;
 			return (
-				<section key={currentKey++}>
-					<label htmlFor={section.sectionName}/>
-					<select name={section.sectionName}>
-						{section.contents.map((lectureName) => <option key={childKey++}>{lectureName}</option>)}
-					</select>
+				<section className="inner-content" key={currentKey++}>
+					<ChapterLabel labelFor={`chapter${currentChapter}`} sectionName={section.sectionName}
+					              duration={section.duration} lecturesCount={section.contents.length}/>
+					<ul id={`chapter${currentChapter++}`} hidden={true}>
+						{
+							section.contents.map((lecture) => {
+								return (
+									<li key={childKey++}>
+										<span>
+											<FontAwesomeIcon icon={faCirclePlay}/>
+											<span className="lecture-name">{lecture}</span>
+											<FontAwesomeIcon className="lecture-dropdown" icon={faChevronDown}/>
+										</span>
+										<span className="preview">Preview</span>
+										<span className="duration">22:22</span>
+									</li>
+								)
+							})
+						}
+					</ul>
 				</section>
 			)
 		});
 		return (
-			<section>
+			<section id="course-info">
 				<h2>Course content</h2>
-				<section>
+				<section id="course-content-summary">
+					<span>
+						<span>{this.props.courseContent.sectionCount} sections</span>
+						<span>{" • "}</span>
+						<span>{this.props.courseContent.lectureCount} lectures</span>
+						<span>{" • "}</span>
+						<span>{this.props.courseContent.totalDuration} total length</span>
+					</span>
+					<span id="expand-all">Expand all sections</span>
+				</section>
+				<section id="course-content">
 					{courseContent}
 				</section>
 			</section>
@@ -72,6 +143,7 @@ class CourseContent extends React.Component {
 }
 
 class CourseDescription extends React.Component {
+
 	render() {
 		let currentKey = 0;
 		let requirements = this.props.requirements.map((r) => <li key={currentKey++}>{r}</li>);
@@ -94,6 +166,7 @@ class CourseDescription extends React.Component {
 }
 
 class CourseInstructors extends React.Component {
+
 	render() {
 		let currentKey = 0;
 		let instructors = this.props.instructors.map((inst) => {
@@ -131,24 +204,28 @@ class CourseInstructors extends React.Component {
 	}
 }
 
-class CourseSideInfo extends React.Component {
+class FixedSide extends React.Component {
+
 	render() {
 		let currentKey = 0;
 		let contents = this.props.courseSummaryContents.map((c) => <li key={currentKey++}><span>{c}</span></li>);
 		return (
-			<section id="side-list">
-				<img src={`${process.env.PUBLIC_URL}${this.props.courseImage}`} alt="course logo"/>
+			<section id="fixed-side">
 				<section id="side-main">
-					<h2 className="price">{this.props.currentPrice}</h2>
+					<section className="prices">
+						<span className="current-price">{this.props.currentPrice}</span>
+						<span className="old-price">{this.props.oldPrice}</span>
+						<span className="discount">{this.props.dicount} off</span>
+					</section>
 					<button className="purple-button">Add to cart</button>
 					<button className="white-button">Buy now</button>
 					<span className="caption">30-Day Money-Back Guarantee</span>
 					<h3>This course includes:</h3>
 					<ul className="side-content">{contents}</ul>
 					<section className="links">
-						<a>Share</a>
-						<a>Gift this course</a>
-						<a>Apply Coupon</a>
+						<span>Share</span>
+						<span>Gift this course</span>
+						<span>Apply Coupon</span>
 					</section>
 				</section>
 				<section id="side-footer">
@@ -157,18 +234,32 @@ class CourseSideInfo extends React.Component {
 					<button className="white-button">Try Udemy Business</button>
 				</section>
 			</section>
+		)
+	}
+}
+
+class CourseSideInfo extends React.Component {
+
+	render() {
+		return (
+			<section id="side-list">
+				<img src={`${process.env.PUBLIC_URL}${this.props.courseImage}`} alt="course logo"/>
+				<FixedSide {...this.props}/>
+			</section>
 		);
 	}
 }
 
 
 class CourseFullPage extends React.Component {
+
 	render() {
 		console.log(this.props.courseImage);
 		return (
 			<main>
 				<CourseSideInfo currentPrice={this.props.currentPrice} courseImage={this.props.courseImage}
-				                courseSummaryContents={this.props.courseSummaryContents}/>
+				                courseSummaryContents={this.props.courseSummaryContents}
+				                oldPrice={this.props.oldPrice} dicount={this.props.discount}/>
 				<CourseOverview learning={this.props.learning}/>
 				<CourseContent courseContent={this.props.courseContent}/>
 				<CourseDescription requirements={this.props.requirements} description={this.props.description}/>
