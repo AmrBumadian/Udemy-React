@@ -7,7 +7,7 @@ nav {
 
 /* header */
 
-header {
+#course-page-header {
     color: white;
     background-color: #1c1d1f;
     margin: 0.5rem 0;
@@ -15,7 +15,7 @@ header {
     padding: 1.5rem;
 }
 
-header > section {
+#course-page-header > section {
     position: relative;
     justify-content: left;
     font-size: 0.9rem;
@@ -25,15 +25,15 @@ header > section {
     padding: 1rem;
 }
 
-header > section > h2 {
+#course-page-header > section > h2 {
     font-size: 2rem;
 }
 
-header > section > p {
+#course-page-header > section > p {
     font-size: 1.2rem;
 }
 
-header > section > * {
+#course-page-header > section > * {
     padding: 0.5rem;
     margin-right: 0.5rem;
 }
@@ -75,7 +75,7 @@ header > section > * {
     border-bottom: 2px solid black;
 }
 
-main {
+.course-page-main {
     margin-left: 4rem;
 }
 

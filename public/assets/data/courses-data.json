@@ -20,7 +20,7 @@
 				"rate": 4.6,
 				"enrolled": 5331,
 				"currentPrice": "E£369.99",
-				"imageSrc": "",
+				"imageSrc": "/assets/images/aws_course2.jpg",
 				"imageAlt": "AWS Logo "
 			},
 			{
@@ -403,6 +403,67 @@
 		"name": "Drawing",
 		"title": "Expand your creative skillset with Drawing",
 		"description": "Want to start drawing for fun or take your craft to the next level? Explore our online drawing classes and learn pencil drawing, figure drawing, cartoon drawing, character drawing for cartoons and anime, illustration, sketching, shading and more. Take an overview course on the fundamentals of drawing or zero in on an area you’d like to improve with a specialized course. We’ve got tons of options to get — and keep — you going.",
-		"courses": []
+		"courses": [
+			{
+				"courseName": "Microsoft Excel 2013 Course Beginners/ Intermediate Training",
+				"author": "Infinite Skills",
+				"rate": 4.5,
+				"enrolled": 1623,
+				"currentPrice": "E£269.99",
+				"oldPrice": "E£519.99",
+				"imageSrc": "/assets/images/ex_course1.jpg",
+				"imageAlt": "Excel Logo "
+			},
+			{
+				"courseName": "Microsoft Excel 2013 Advanced, Online Excel Training Course",
+				"author": "Infinite Skills",
+				"rate": 4.5,
+				"enrolled": 3504,
+				"currentPrice": "E£269.99",
+				"oldPrice": "E£519.99",
+				"imageSrc": "/assets/images/ex_course2.jpg",
+				"imageAlt": "Excel Logo "
+			},
+			{
+				"courseName": "Microsoft Excel - From Beginner to Expert in 6 Hours",
+				"author": "Todd McLeod",
+				"rate": 4.5,
+				"enrolled": 24595,
+				"currentPrice": "E£229.99",
+				"oldPrice": "E£269.99",
+				"imageSrc": "/assets/images/ex_course3.jpg",
+				"imageAlt": "Excel Logo "
+			},
+			{
+				"courseName": "Sharper skills using Microsoft excel 2010 for business",
+				"author": "Ulrika Hedlund",
+				"rate": 4.7,
+				"enrolled": 656,
+				"currentPrice": "E£199.99",
+				"oldPrice": "E£229.99",
+				"imageSrc": "/assets/images/ex_course4.jpg",
+				"imageAlt": "Excel Logo "
+			},
+			{
+				"courseName": "Learn Microsoft Excel 2013 - Advanced",
+				"author": "Simon Sex IT",
+				"rate": 4.6,
+				"enrolled": 372,
+				"currentPrice": "E£269.99",
+				"oldPrice": "E£679.99",
+				"imageSrc": "/assets/images/ex_course5.jpg",
+				"imageAlt": "Excel Logo "
+			},
+			{
+				"courseName": "Excel 2013",
+				"author": "Learnit Anytime",
+				"rate": 4.6,
+				"enrolled": 1442,
+				"currentPrice": "E£269.99",
+				"oldPrice": "E£419.99",
+				"imageSrc": "/assets/images/ex_course6.jpg",
+				"imageAlt": "Excel Logo "
+			}
+		]
 	}
 }

@@ -1,6 +1,7 @@
 /* Header */
 
 header {
+    color: black;
     display: flex;
     align-items: center;
     background-color: #f8f9fb;
@@ -77,6 +78,11 @@ main h2 {
     cursor: pointer;
 }
 
+.category a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .category-description {
     margin: 1rem 0 1.5rem 0;
     max-width: 800px;
@@ -101,7 +107,7 @@ main h2 {
 #next-button,
 #prev-button {
     position: absolute;
-    top: 145%;
+    top: 152%;
     justify-content: center;
     z-index: 1;
     font-size: 1.5rem;

@@ -39,7 +39,7 @@ class SearchBar extends React.Component {
 	}
 }
 
-class NavBar extends React.Component {
+class NavBarComponent extends React.Component {
 	constructor(props) {
 		super(props);
 		this.props = props;
@@ -84,5 +84,5 @@ class NavBar extends React.Component {
 }
 
 export {
-	NavBar
+	NavBarComponent
 }

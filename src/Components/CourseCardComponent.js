@@ -2,8 +2,9 @@ import React from 'react';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faStar, faStarHalfStroke, faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {faStar, faStarHalfStroke, faChevronLeft, faChevronRight} from '@fortawesome/free-solid-svg-icons'
+import {Link} from "react-router-dom";
 
 class PrevArrow extends React.Component {
 	constructor(props) {
@@ -36,18 +37,7 @@ class Slicker extends React.Component {
 		super(props);
 		this.next = this.next.bind(this);
 		this.previous = this.previous.bind(this);
-	}
-
-	next() {
-		this.slider.slickNext();
-	}
-
-	previous() {
-		this.slider.slickPrev();
-	}
-
-	render() {
-		const settings = {
+		this.settings = {
 			infinite: true,
 			autplay: true,
 			autoplaySpeed: 2000,
@@ -78,9 +68,26 @@ class Slicker extends React.Component {
 				}
 			],
 		};
+	}
+
+	next() {
+		this.slider.slickNext();
+	}
+
+	previous() {
+		this.slider.slickPrev();
+	}
+
+	render() {
+		let currentKey = 0;
+		let coursesCard = this.props.courses.map((course) => {
+			return (<CourseCardComponent key={currentKey++} {...course}/>)
+		});
 		return (
 			<section>
-				<Slider ref={c => (this.slider = c)} {...settings}>{this.props.courses}</Slider>
+				<Slider ref={c => (this.slider = c)} {...this.settings}>
+					{(coursesCard.length) ? coursesCard : <h2 className="empty-courses">There are no courses available</h2>}
+				</Slider>
 				<NextArrow onClick={this.next}/>
 				<PrevArrow onClick={this.previous}/>
 			</section>
@@ -88,19 +95,21 @@ class Slicker extends React.Component {
 	}
 }
 
-class CourseCard extends React.Component {
+class CourseCardComponent extends React.Component {
 	render() {
 		return (
-			<section className="course">
-				<img src={`${process.env.PUBLIC_URL}${this.props.imageSrc}`} alt={this.props.imageAlt}/>
-				<h4 className="course-name">{this.props.courseName}</h4>
-				<h5 className="author">{this.props.author}</h5>
-				<Rating rate={this.props.rate} enrolled={this.props.enrolled}/>
-				<section>
-					<span className="price">{this.props.currentPrice}</span>
-					<span className="old-price">{this.props.oldPrice}</span>
+			<Link to={`/courses/${this.props.courseName.replace(/\s/g, "")}`}>
+				<section className="course">
+					<img src={`${process.env.PUBLIC_URL}${this.props.imageSrc}`} alt={this.props.imageAlt}/>
+					<h4 className="course-name">{this.props.courseName}</h4>
+					<h5 className="author">{this.props.author}</h5>
+					<Rating rate={this.props.rate} enrolled={this.props.enrolled}/>
+					<section>
+						<span className="price">{this.props.currentPrice}</span>
+						<span className="old-price">{this.props.oldPrice}</span>
+					</section>
 				</section>
-			</section>
+			</Link>
 		);
 	}
 }
@@ -112,12 +121,12 @@ class Rating extends React.Component {
 		let stars = [];
 		let rateFloat = parseFloat(courseRating);
 		while (rateFloat >= 1) {
-			let star = <FontAwesomeIcon key={currentKey++} icon={faStar} />
+			let star = <FontAwesomeIcon key={currentKey++} icon={faStar}/>
 			stars.push(star);
 			--rateFloat;
 		}
 		if (rateFloat > 0) {
-			let star = <FontAwesomeIcon key={currentKey++} icon={faStarHalfStroke} />
+			let star = <FontAwesomeIcon key={currentKey++} icon={faStarHalfStroke}/>
 			stars.push(star);
 		}
 		return stars;
@@ -138,7 +147,6 @@ class Rating extends React.Component {
 }
 
 export {
-	CourseCard,
 	Slicker,
 	Rating
 }

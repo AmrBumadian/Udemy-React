@@ -1,5 +1,5 @@
 import React from 'react';
-import {Rating} from './courseCard';
+import {Rating} from './CourseCardComponent';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {
 	faAward,
@@ -9,30 +9,41 @@ import {
 	faChevronDown,
 	faChevronUp
 } from '@fortawesome/free-solid-svg-icons'
+import {FooterComponent} from "./FooterComponent";
+import {useParams} from "react-router-dom";
+import {NavBarComponent} from "./NavBarComponent";
+
+import '../styles/course-page.css';
+
+let apiUrl = "http://localhost:8000/";
 
 class CourseHeader extends React.Component {
 	render() {
 		return (
-			<section>
-				<h2>{this.props.courseName}</h2>
-				<p>{this.props.courseTitle}</p>
-				<Rating rate={this.props.courseRate} ratesCount={this.props.ratingsCount}
-				        enrolled={this.props.enrolled}/>
-				<span>Created by <span className="underlined">{this.props.author}</span></span>
-			</section>
-		)
+			<header id="#course-page-header">
+				<section>
+					<h2>{this.props.courseName}</h2>
+					<p>{this.props.courseTitle}</p>
+					<Rating rate={this.props.courseRate} ratesCount={this.props.ratingsCount}
+					        enrolled={this.props.enrolled}/>
+					<span>Created by <span className="underlined">{this.props.author}</span></span>
+				</section>
+			</header>
+		);
 	}
 }
 
 class CourseNav extends React.Component {
 	render() {
 		return (
-			<section>
-				<span>Overview</span>
-				<span>Curriculum</span>
-				<span>Instructor</span>
-				<span>Reviews</span>
-			</section>
+			<nav id="course-nav">
+				<section>
+					<span>Overview</span>
+					<span>Curriculum</span>
+					<span>Instructor</span>
+					<span>Reviews</span>
+				</section>
+			</nav>
 		)
 	}
 }
@@ -253,24 +264,51 @@ class CourseSideInfo extends React.Component {
 
 class CourseFullPage extends React.Component {
 
+	constructor(props) {
+		super(props);
+		this.state = {courseData: {}};
+		this.courseName = this.props.params.courseName;
+		console.log(this.courseName);
+	}
+
+	componentDidMount() {
+		fetch(apiUrl + this.courseName)
+			.then((response) => response.json())
+			.then((data) => {
+				this.setState({courseData: data})
+			});
+	}
+
 	render() {
-		console.log(this.props.courseImage);
+		if (!Object.keys(this.state.courseData).length) return <section></section>;
 		return (
-			<main>
-				<CourseSideInfo currentPrice={this.props.currentPrice} courseImage={this.props.courseImage}
-				                courseSummaryContents={this.props.courseSummaryContents}
-				                oldPrice={this.props.oldPrice} dicount={this.props.discount}/>
-				<CourseOverview learning={this.props.learning}/>
-				<CourseContent courseContent={this.props.courseContent}/>
-				<CourseDescription requirements={this.props.requirements} description={this.props.description}/>
-				<CourseInstructors instructors={this.props.instructors}/>
-			</main>
+			<section>
+				<NavBarComponent/>
+				<CourseHeader {...this.state.courseData.header}/>
+				<CourseNav/>
+				<CourseSideInfo currentPrice={this.state.courseData.currentPrice}
+				                courseImage={this.state.courseData.courseImage}
+				                courseSummaryContents={this.state.courseData.courseSummaryContents}
+				                oldPrice={this.state.courseData.oldPrice} dicount={this.state.courseData.discount}/>
+				<main className="course-page-main">
+					<CourseOverview learning={this.state.courseData.learning}/>
+					<CourseContent courseContent={this.state.courseData.courseContent}/>
+					<CourseDescription requirements={this.state.courseData.requirements}
+					                   description={this.state.courseData.description}/>
+					<CourseInstructors instructors={this.state.courseData.instructors}/>
+				</main>
+				<FooterComponent/>}
+			</section>
 		)
 	}
 }
 
+function GetFullPage() {
+	let params = useParams();
+	return (<CourseFullPage params={{...params}}/>);
+}
+
 export {
-	CourseHeader,
-	CourseNav,
-	CourseFullPage
+	CourseFullPage,
+	GetFullPage
 }

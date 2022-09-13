@@ -1,6 +1,6 @@
 import React from 'react';
 
-export class Footer extends React.Component {
+export class FooterComponent extends React.Component {
 	render() {
 		return (
 			<section>
