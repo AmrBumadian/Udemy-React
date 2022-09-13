@@ -1,6 +1,7 @@
 import React from 'react';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faSearch, faGlobe, faShoppingCart, faBars} from '@fortawesome/free-solid-svg-icons'
+import {Link} from "react-router-dom";
 
 class SearchBar extends React.Component {
 	constructor(props) {
@@ -48,11 +49,11 @@ class NavBarComponent extends React.Component {
 	render() {
 		let currentKey = 0;
 		return (
-			<nav>
+			<nav id={this.props.id}>
 				<button id="hidden-menu">
 					<FontAwesomeIcon key={currentKey++} icon={faBars}/>
 				</button>
-				<img src={`${process.env.PUBLIC_URL}/assets/images/udemy-logo.svg`} className="logo" alt="Udemy Logo"/>
+				<Link to="/" className="logo"><img src={`${process.env.PUBLIC_URL}/assets/images/udemy-logo.svg`} alt="Udemy Logo"/></Link>
 				<button>Categories</button>
 				<form>
 					<button type="submit">

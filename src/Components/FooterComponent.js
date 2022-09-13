@@ -3,7 +3,7 @@ import React from 'react';
 export class FooterComponent extends React.Component {
 	render() {
 		return (
-			<section>
+			<footer id={this.props.id}>
 				<section id="footer-header">
 					<h3>Top companies chose <span>Udemy Business</span> to build in-demand career skills.</h3>
 					<section id="footer-images">
@@ -11,7 +11,8 @@ export class FooterComponent extends React.Component {
 						<img src={`${process.env.PUBLIC_URL}/assets/images/volks-logo.svg`} alt="volks logo"/>
 						<img src={`${process.env.PUBLIC_URL}/assets/images/box-logo.svg`} alt="box logo"/>
 						<img src={`${process.env.PUBLIC_URL}/assets/images/netapp-logo.svg`} alt="netapp logo"/>
-						<img src={`${process.env.PUBLIC_URL}/assets/images/eventbrite-logo.svg`} alt="eventbrite logo"/>
+						<img src={`${process.env.PUBLIC_URL}/assets/images/eventbrite-logo.svg`}
+						     alt="eventbrite logo"/>
 					</section>
 				</section>
 				<section id="footer-links">
@@ -41,7 +42,7 @@ export class FooterComponent extends React.Component {
 					<img src={`${process.env.PUBLIC_URL}/assets/images/udemyfooter-logo.svg`} alt="udemy logo"/>
 					<span>&copy; 2022 Udemy, Inc.</span>
 				</section>
-			</section>
+			</footer>
 		);
 	}
 }

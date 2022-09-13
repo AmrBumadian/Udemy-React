@@ -20,7 +20,7 @@ let apiUrl = "http://localhost:8000/";
 class CourseHeader extends React.Component {
 	render() {
 		return (
-			<header id="#course-page-header">
+			<header id="course-page-header">
 				<section>
 					<h2>{this.props.courseName}</h2>
 					<p>{this.props.courseTitle}</p>
@@ -36,14 +36,14 @@ class CourseHeader extends React.Component {
 class CourseNav extends React.Component {
 	render() {
 		return (
-			<nav id="course-nav">
+			<section id="course-nav">
 				<section>
 					<span>Overview</span>
 					<span>Curriculum</span>
 					<span>Instructor</span>
 					<span>Reviews</span>
 				</section>
-			</nav>
+			</section>
 		)
 	}
 }
@@ -261,7 +261,6 @@ class CourseSideInfo extends React.Component {
 	}
 }
 
-
 class CourseFullPage extends React.Component {
 
 	constructor(props) {
@@ -283,21 +282,21 @@ class CourseFullPage extends React.Component {
 		if (!Object.keys(this.state.courseData).length) return <section></section>;
 		return (
 			<section>
-				<NavBarComponent/>
+				<NavBarComponent id="other-nav"/>
 				<CourseHeader {...this.state.courseData.header}/>
 				<CourseNav/>
 				<CourseSideInfo currentPrice={this.state.courseData.currentPrice}
 				                courseImage={this.state.courseData.courseImage}
 				                courseSummaryContents={this.state.courseData.courseSummaryContents}
 				                oldPrice={this.state.courseData.oldPrice} dicount={this.state.courseData.discount}/>
-				<main className="course-page-main">
+				<main id="course-page-main">
 					<CourseOverview learning={this.state.courseData.learning}/>
 					<CourseContent courseContent={this.state.courseData.courseContent}/>
 					<CourseDescription requirements={this.state.courseData.requirements}
 					                   description={this.state.courseData.description}/>
 					<CourseInstructors instructors={this.state.courseData.instructors}/>
 				</main>
-				<FooterComponent/>}
+				<FooterComponent id="footer"/>}
 			</section>
 		)
 	}

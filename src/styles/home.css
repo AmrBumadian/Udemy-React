@@ -1,7 +1,148 @@
+* {
+    box-sizing: content-box;
+}
+
+h2 {
+    font-weight: 600;
+}
+
+/* body and all elements */
+
+body {
+    font-family: "udemy sans", Helvetica, Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body * {
+    background: none;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+/* Nav */
+.logo {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    height: 50%;
+    width: 20%;
+    margin-left: 1.5rem;
+}
+
+nav > * {
+    margin: 0 0.5rem;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+nav > button {
+    font-size: 0.9rem;
+    color: black;
+    border: none;
+}
+
+nav > button:hover {
+    color: blueviolet;
+}
+
+nav > form {
+    display: flex;
+    align-items: center;
+    margin-right: 1.5rem;
+    width: 100%;
+    padding: 0.6rem;
+    background-color: rgba(0, 0, 0, 0.05);
+    border: 1px black solid;
+    border-radius: 2rem;
+}
+
+#home-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 4.5rem;
+    z-index: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+    border-bottom: 1px solid rgba(155,155,155,0.2);
+}
+
+#hidden-icons,
+#hidden-menu {
+    display: none;
+}
+
+#login,
+#signup,
+#language {
+    border: 1px solid black;
+    color: black;
+}
+
+#login,
+#signup {
+    font-weight: bold;
+}
+
+#login:hover,
+#language:hover {
+    background-color: gainsboro;
+    color: black;
+}
+
+#signup:hover {
+    background-color: white;
+    color: blueviolet;
+}
+
+#login {
+    padding: 0.6rem 1.5rem;
+}
+
+#language {
+    padding: 0.6rem 0.7rem;
+    margin-right: 1.5rem;
+}
+
+#signup {
+    background-color: black;
+    color: white;
+    padding: 0.6rem 0.9rem;
+}
+
+/* Search */
+
+#search-bar {
+    height: 1.8rem;
+    width: 100%;
+    margin-left: 0.9rem;
+    font-size: 1rem;
+    outline: none;
+}
+
+.stars {
+    color: goldenrod;
+    font-weight: 600;
+    margin-right: 1%;
+}
+
+.underlined {
+    text-decoration: underline;
+    color: #CEC0FC;
+}
+
+.bold-underlined {
+    color: #5624d0;
+    text-decoration: underline;
+}
+
 /* Header */
 
-header {
-    color: black;
+#home-header {
     display: flex;
     align-items: center;
     background-color: #f8f9fb;
@@ -9,7 +150,7 @@ header {
     width: 100%;
 }
 
-header > section {
+#home-header > section {
     position: absolute;
     background-color: white;
     height: 8rem;
@@ -19,29 +160,29 @@ header > section {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-header > section > p {
+#home-header > section > p {
     padding: 1rem;
 }
 
-header > section > h2 {
+#home-header > section > h2 {
     font-family: serif;
     font-size: 2.2rem;
     margin-bottom: 0.6rem;
 }
 
-header > img {
+#home-header > img {
     margin: auto;
     margin-top: 4.5rem;
 }
 
 /* Main */
 
-main {
+#home-main {
     width: 95%;
     margin: 3rem auto 1.5rem auto;
 }
 
-main h2 {
+#home-main h2 {
     font-size: 2.5rem;
     font-family: Times, serif;
     margin-bottom: 1rem;
@@ -78,11 +219,6 @@ main h2 {
     cursor: pointer;
 }
 
-.category a {
-    text-decoration: none;
-    color: inherit;
-}
-
 .category-description {
     margin: 1rem 0 1.5rem 0;
     max-width: 800px;
@@ -104,10 +240,15 @@ main h2 {
 
 /* Courses */
 
+.courses a {
+    color: inherit;
+    text-decoration: none;
+}
+
 #next-button,
 #prev-button {
     position: absolute;
-    top: 152%;
+    top: 145%;
     justify-content: center;
     z-index: 1;
     font-size: 1.5rem;
@@ -222,8 +363,8 @@ main h2 {
 /* Changing Nav bar */
 @media only screen and (max-width: 800px) {
 
-    nav > form,
-    nav > button {
+    #home-nav > form,
+    #home-nav > button {
         display: none;
     }
 
@@ -233,7 +374,7 @@ main h2 {
         overflow: visible;
     }
 
-    nav {
+    #home-nav {
         justify-content: space-between;
         height: 4rem;
     }
@@ -309,18 +450,18 @@ main h2 {
         width: 100%;
     }
 
-    main {
+    #home-main {
         width: 90%;
         margin: 0 auto 2rem auto;
     }
 
-    main h2 {
+    #home-main h2 {
         margin-top: 1rem;
         font-size: 1.8rem;
     }
 
     .courses {
-       overflow: hidden;
+        overflow: hidden;
     }
 
     .course {

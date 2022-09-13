@@ -4,8 +4,6 @@ import ReactDOM from 'react-dom/client';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import {GetFullPage} from "./Components/CourseInfoPageComponents";
 
-import './styles/common.css'
-
 const appRoot = ReactDOM.createRoot(document.querySelector("#react-body"));
 appRoot.render(
 	<BrowserRouter>

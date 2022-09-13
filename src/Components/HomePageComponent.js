@@ -10,7 +10,7 @@ let apiUrl = "http://localhost:5000/";
 class HomeHeader extends React.Component {
 	render() {
 		return (
-			<header>
+			<header id="home-header">
 				<section>
 					<h2> 24-Hour Flash Sale</h2>
 					<p>
@@ -79,7 +79,7 @@ class HomeMain extends React.Component {
 
 	render() {
 		return (
-			<main>
+			<main id="home-main">
 				<h2>A broad selection of courses</h2>
 				<p>
 					Choose from 185,000 online video courses with new additions published
@@ -127,7 +127,7 @@ export class HomePageComponent extends React.Component {
 	render() {
 		return (
 			<section>
-				<NavBarComponent/>
+				<NavBarComponent id="home-nav"/>
 				<HomeHeader/>
 				<HomeMain coursesData={this.state.allCoursesData}/>
 			</section>
