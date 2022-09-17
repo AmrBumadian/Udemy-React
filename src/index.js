@@ -11,7 +11,7 @@ appRoot.render(
 		<Routes>
 			<Route path="/" element={<HomePageComponent/>}>
 				<Route path="/" element={<CourseCategory/>}/>
-				<Route path="/search/:query" element={<SearchResultWrapper/>}/>
+				<Route path="/search" element={<SearchResultWrapper/>}/>
 			</Route>
 			<Route path="/courses">
 				<Route path=":courseName" element={<GetFullPage/>}/>
