@@ -1,5 +1,7 @@
 import React from 'react';
-
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {faSearch, faGlobe, faShoppingCart, faBars} from '@fortawesome/free-solid-svg-icons'
+import {Link} from "react-router-dom";
 
 class SearchBar extends React.Component {
 	constructor(props) {
@@ -38,42 +40,43 @@ class SearchBar extends React.Component {
 	}
 }
 
-class NavBar extends React.Component {
+class NavBarComponent extends React.Component {
 	constructor(props) {
 		super(props);
 		this.props = props;
 	}
 
 	render() {
+		let currentKey = 0;
 		return (
-			<nav>
+			<nav id={this.props.id}>
 				<button id="hidden-menu">
-					<i className="fa fa-bars fa-lg" aria-hidden="true"></i>
+					<FontAwesomeIcon key={currentKey++} icon={faBars}/>
 				</button>
-				<img src={`${process.env.PUBLIC_URL}/assets/images/udemy-logo.svg`} className="logo" alt="Udemy Logo"/>
+				<Link to="/" className="logo"><img src={`${process.env.PUBLIC_URL}/assets/images/udemy-logo.svg`} alt="Udemy Logo"/></Link>
 				<button>Categories</button>
 				<form>
 					<button type="submit">
-						<i className="fa fa-search fa-lg" aria-hidden="true"></i>
+						<FontAwesomeIcon key={currentKey++} icon={faSearch}/>
 					</button>
 					<SearchBar {...this.props} searchMethod={this.props.searchMethod}/>
 				</form>
 				<button id="udemy-business">Udemy Business</button>
 				<button id="udemy-teach">Teach on Udemy</button>
 				<button>
-					<i className="fa fa-shopping-cart fa-lg" aria-hidden="true"></i>
+					<FontAwesomeIcon key={currentKey++} icon={faShoppingCart}/>
 				</button>
 				<button id="login">Log in</button>
 				<button id="signup">Sign up</button>
 				<button id="language">
-					<i className="fa fa-globe fa-lg" aria-hidden="true"></i>
+					<FontAwesomeIcon key={currentKey++} icon={faGlobe}/>
 				</button>
 				<span id="hidden-icons">
 		            <button>
-		                <i className="fa fa-search fa-lg" aria-hidden="true"></i>
+		                <FontAwesomeIcon key={currentKey++} icon={faSearch}/>
 		            </button>
 		            <button>
-		                <i className="fa fa-shopping-cart fa-lg" aria-hidden="true"></i>
+		                <FontAwesomeIcon key={currentKey++} icon={faShoppingCart}/>
 		            </button>
                 </span>
 			</nav>
@@ -82,5 +85,5 @@ class NavBar extends React.Component {
 }
 
 export {
-	NavBar
+	NavBarComponent
 }
